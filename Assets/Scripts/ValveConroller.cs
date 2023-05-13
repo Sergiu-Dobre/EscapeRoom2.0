@@ -11,9 +11,8 @@ public class ValveConroller : MonoBehaviour
     [SerializeField]private bool allowInteraction;
     [SerializeField]private Vector3 rescaleRandom;
     [SerializeField] private Vector3 rescaleRandom2;
-    [SerializeField] private Vector3 rescaleRandom3;
+    [SerializeField] private Vector3 rescaleRandom3; 
     [SerializeField] private Vector3 rescale;
-    [SerializeField] private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Awake()
@@ -23,13 +22,13 @@ public class ValveConroller : MonoBehaviour
         //rescaleRandom3 = new Vector3(1f, Random.Range(1f, 0.2f), 1f);
        
         allowInteraction = false;
-        rescale = new Vector3(1f, 0.65f, 1f);
+        rescale = new Vector3(1f, 1.3f, 1f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             allowInteraction = true;
         }
@@ -37,15 +36,14 @@ public class ValveConroller : MonoBehaviour
         {
             allowInteraction = false;
         }
-
     }
-    private void OnTriggerStay (Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (allowInteraction)
         {
             if (other.tag == "Player")
-            {   
-                audioSource.Play();
+            {
+
                 // transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
                 Debug.Log("colides wiht the valve");
                 
@@ -53,9 +51,8 @@ public class ValveConroller : MonoBehaviour
                     pipe2.transform.localScale = rescaleRandom2;
                     pipe3.transform.localScale = rescaleRandom3;
                     pipe4.transform.localScale = rescale;
-
+                
             }
-            
         }
        
     }

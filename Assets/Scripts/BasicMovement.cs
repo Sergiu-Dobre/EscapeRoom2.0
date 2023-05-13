@@ -10,22 +10,46 @@ public class BasicMovement : MonoBehaviour
     public float speed = 12f;
 
     public float gravity = -9.81f;
-    //earth gravity 0_o
+    //earth gravity 0_o 
 
     public float jumpH = 5f;
 
-    
+    public IInteractable Interactable { get; set; }
+
+
+    private DialogueUI _dialogueUI;
+
+    public DialogueUI dialogueUI
+    {
+        get { return _dialogueUI; }
+        set { _dialogueUI = value; }
+    }
+
+
 
     Vector3 velocity;
     void Start()
     {
-
+        _dialogueUI = FindObjectOfType<DialogueUI>();
     }
 
     // Update is called once per frame
     void Update()
     {
        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+
+            if (Interactable != null)
+            {
+
+                Interactable?.Interact(player: this);
+
+            }
+
+        }
+
+        if (dialogueUI.IsOpen) return;
 
         // we are gonna use the axis for movement obv x&z because we dont want to go up
         float x = Input.GetAxis("Horizontal");
