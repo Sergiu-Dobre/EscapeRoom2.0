@@ -354,6 +354,7 @@ MonoBehaviour:
   rescaleRandom2: {x: 1, y: 0.1, z: 1}
   rescaleRandom3: {x: 1, y: 0.4, z: 1}
   rescale: {x: 1, y: 0.65, z: 1}
+  audioSource: {fileID: 0}
 --- !u!23 &80613906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1620,6 +1621,7 @@ MonoBehaviour:
   rescaleRandom2: {x: 1, y: 0.65, z: 1}
   rescaleRandom3: {x: 1, y: 0.32, z: 1}
   rescale: {x: 1, y: 0.65, z: 1}
+  audioSource: {fileID: 0}
 --- !u!23 &401996766
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3373,6 +3375,7 @@ MonoBehaviour:
   rescaleRandom2: {x: 1, y: 0.65, z: 1}
   rescaleRandom3: {x: 1, y: 0.2, z: 1}
   rescale: {x: 1, y: 0.65, z: 1}
+  audioSource: {fileID: 0}
 --- !u!23 &918261539
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6054,6 +6057,7 @@ MonoBehaviour:
   rescaleRandom2: {x: 1, y: 0.65, z: 1}
   rescaleRandom3: {x: 1, y: 0.65, z: 1}
   rescale: {x: 1, y: 0.65, z: 1}
+  audioSource: {fileID: 0}
 --- !u!23 &1353966745
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8689,9 +8693,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2068648406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da57a1e47eccddc4fb80fc1c5cfb8e04, type: 3}
+  m_Script: {fileID: 11500000, guid: f554afde96af67744b96b74e17c10b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainlvl: 2
+  delayTime: 15
 --- !u!4 &2068648408
 Transform:
   m_ObjectHideFlags: 0
