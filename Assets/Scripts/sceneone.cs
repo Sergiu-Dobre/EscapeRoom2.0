@@ -13,6 +13,8 @@ public class sceneone : MonoBehaviour
     private void Start()
     {
         timer = 0f;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     private void Update()
