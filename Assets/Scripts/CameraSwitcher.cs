@@ -11,11 +11,14 @@ public class CameraSwitcher : MonoBehaviour
     private bool playerInRange = false;
     private float mouseX, mouseY;
 
+    public GameObject box;
+
     private void Start()
     {
         // Activate the main camera initially
         mainCamera.enabled = true;
         alternativeCamera.enabled = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
@@ -43,8 +46,8 @@ public class CameraSwitcher : MonoBehaviour
                 canSwitchBack = false;
 
                 // Unlock and show the cursor
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
             }
         }
 
@@ -57,6 +60,8 @@ public class CameraSwitcher : MonoBehaviour
             mouseY = Mathf.Clamp(mouseY, -90f, 90f);
 
             alternativeCamera.transform.rotation = Quaternion.Euler(mouseY, mouseX, 0f);
+
+            box.SetActive(false);
         }
     }
 

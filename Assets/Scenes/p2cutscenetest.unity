@@ -354,6 +354,7 @@ MonoBehaviour:
   rescaleRandom2: {x: 1, y: 0.1, z: 1}
   rescaleRandom3: {x: 1, y: 0.4, z: 1}
   rescale: {x: 1, y: 0.65, z: 1}
+  audioSource: {fileID: 0}
 --- !u!23 &80613906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1620,6 +1621,7 @@ MonoBehaviour:
   rescaleRandom2: {x: 1, y: 0.65, z: 1}
   rescaleRandom3: {x: 1, y: 0.32, z: 1}
   rescale: {x: 1, y: 0.65, z: 1}
+  audioSource: {fileID: 0}
 --- !u!23 &401996766
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3373,6 +3375,7 @@ MonoBehaviour:
   rescaleRandom2: {x: 1, y: 0.65, z: 1}
   rescaleRandom3: {x: 1, y: 0.2, z: 1}
   rescale: {x: 1, y: 0.65, z: 1}
+  audioSource: {fileID: 0}
 --- !u!23 &918261539
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3966,6 +3969,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.022
       objectReference: {fileID: 0}
+    - target: {fileID: 624639875693028433, guid: cad11e73f5c8b504cb71c5369f3a9b2a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ad036c5682f05e8489b54b426d281e13, type: 2}
     - target: {fileID: 2073173471048463465, guid: cad11e73f5c8b504cb71c5369f3a9b2a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3976,6 +3984,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2685966326253992997, guid: cad11e73f5c8b504cb71c5369f3a9b2a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ad036c5682f05e8489b54b426d281e13, type: 2}
+    - target: {fileID: 3736417423185078829, guid: cad11e73f5c8b504cb71c5369f3a9b2a,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3736417423185078829, guid: cad11e73f5c8b504cb71c5369f3a9b2a,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3736417423185078829, guid: cad11e73f5c8b504cb71c5369f3a9b2a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ad036c5682f05e8489b54b426d281e13, type: 2}
     - target: {fileID: 3939174944856485558, guid: cad11e73f5c8b504cb71c5369f3a9b2a,
         type: 3}
       propertyPath: m_IsActive
@@ -6054,6 +6082,7 @@ MonoBehaviour:
   rescaleRandom2: {x: 1, y: 0.65, z: 1}
   rescaleRandom3: {x: 1, y: 0.65, z: 1}
   rescale: {x: 1, y: 0.65, z: 1}
+  audioSource: {fileID: 0}
 --- !u!23 &1353966745
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8689,9 +8718,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2068648406}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da57a1e47eccddc4fb80fc1c5cfb8e04, type: 3}
+  m_Script: {fileID: 11500000, guid: f554afde96af67744b96b74e17c10b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainlvl: 2
+  delayTime: 15
 --- !u!4 &2068648408
 Transform:
   m_ObjectHideFlags: 0

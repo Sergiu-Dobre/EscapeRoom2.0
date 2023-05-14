@@ -6,7 +6,7 @@ public class MouseController : MonoBehaviour
 {
     public float mouseDPI = 100f;
     public Transform pBody;
-    float rotationX = 0f;
+    float rotationX = 100f;
 
 
     // Start is called before the first frame update
