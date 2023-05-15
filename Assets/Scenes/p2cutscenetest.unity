@@ -1248,7 +1248,7 @@ PrefabInstance:
     - target: {fileID: 3723615072802569064, guid: 4d9283c0c3695bc449c5aff70acce419,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.084
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 3723615072802569064, guid: 4d9283c0c3695bc449c5aff70acce419,
         type: 3}
@@ -1497,7 +1497,7 @@ PrefabInstance:
     - target: {fileID: 3723615072802569064, guid: 4d9283c0c3695bc449c5aff70acce419,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.96
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 3723615072802569064, guid: 4d9283c0c3695bc449c5aff70acce419,
         type: 3}
@@ -8315,6 +8315,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cutscene prep part2
       objectReference: {fileID: 0}
+    - target: {fileID: 8743813690021804245, guid: 898d88016c50a304790f1202b82e672e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a7c2450ddc766cd4084054818b87eeeb, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 898d88016c50a304790f1202b82e672e, type: 3}
 --- !u!1001 &2028806079
