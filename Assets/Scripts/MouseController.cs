@@ -25,7 +25,7 @@ public class MouseController : MonoBehaviour
 
         rotationX -= mouseY;
         transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
-        rotationX = Mathf.Clamp(rotationX, -90, 90);
+        rotationX = Mathf.Clamp(rotationX, -90, 0);
         //clamping the rotation
 
         pBody.Rotate(Vector3.up * mouseX * Time.deltaTime * mouseDPI);
