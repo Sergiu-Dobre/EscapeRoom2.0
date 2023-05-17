@@ -7687,7 +7687,7 @@ PrefabInstance:
     - target: {fileID: 2173674633394624234, guid: a9da0830be620454da207b49773810ad,
         type: 3}
       propertyPath: mouseDPI
-      value: 200
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9da0830be620454da207b49773810ad, type: 3}
