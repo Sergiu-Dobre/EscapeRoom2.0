@@ -14,6 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Ai
   dialogue:
-  - Dialogue here
+  - 'Do you wanna hear more?
+
+'
+  - "Very well human! \n"
+  - 'Do you wanna hear more?
+
+'
   playerDialogue:
-  - Here
+  - yes
+  - no

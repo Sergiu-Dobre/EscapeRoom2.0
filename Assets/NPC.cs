@@ -1,25 +1,14 @@
-
-
 using UnityEngine;
-
 using UnityEngine.SceneManagement;
-
 using TMPro;
-
 using UnityEngine.UI;
-
 using System.Collections;
-
 using System.Collections.Generic;
-
 using System;
-
-
 
 [CreateAssetMenu(fileName = "AI file", menuName = "AI Files Archive")]
 
 public class NPC : ScriptableObject
-
 {
 
 
