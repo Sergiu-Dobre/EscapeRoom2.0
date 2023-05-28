@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class dialsControlP : MonoBehaviour
 {
-    float[] rotations = { 0, 120, -60, };
+    float[] rotations = { 0, 120, -60 };
 
     public float[] correctRotation;
     [SerializeField]
@@ -22,55 +22,60 @@ public class dialsControlP : MonoBehaviour
     private void Start()
     {
         PossibleRots = correctRotation.Length;
-        //int rand = Random.Range(0, rotations.Length);
-        //transform.eulerAngles = new Vector3(0, 0, rotations[rand]);
 
-        if(PossibleRots > 1)
+        if (PossibleRots > 1)
         {
-        if (transform.eulerAngles.y == correctRotation[0] || transform.eulerAngles.y == correctRotation[1])
-        {
-            isPlaced = true;
-            gameManager.correctMove();
+            foreach (float rotation in correctRotation)
+            {
+                if (Mathf.Abs(transform.eulerAngles.y - rotation) < 0.01f)
+                {
+                    isPlaced = true;
+                    gameManager.correctMove();
+                    break;
+                }
+            }
         }
         else
         {
-            if (transform.eulerAngles.y == correctRotation[0])
-        {
-            isPlaced = true;
-            gameManager.correctMove();
-        }
-        }
+            if (Mathf.Abs(transform.eulerAngles.y - correctRotation[0]) < 0.01f)
+            {
+                isPlaced = true;
+                gameManager.correctMove();
+            }
         }
     }
 
     private void OnMouseDown()
     {
-        transform.Rotate (new Vector3(0, 120, 0));
-        Debug.Log("Pressed button");
+        transform.Rotate(new Vector3(0, 120, 0));
+        //Debug.Log("Pressed button");
 
-        if(PossibleRots > 1)
+        if (PossibleRots > 1)
         {
-            if(transform.eulerAngles.y == correctRotation[0] || transform.eulerAngles.y == correctRotation[1] && isPlaced == false)
+            foreach (float rotation in correctRotation)
             {
-                isPlaced = true;
-                gameManager.correctMove();
-            }
-
-            else if(isPlaced == true)
-            {
-                isPlaced = false;
-                gameManager.wrongMove();
+                if (Mathf.Abs(transform.eulerAngles.y - rotation) < 0.01f && !isPlaced)
+                {
+                    isPlaced = true;
+                    gameManager.correctMove();
+                    break;
+                }
+                else if (isPlaced)
+                {
+                    isPlaced = false;
+                    gameManager.wrongMove();
+                    break;
+                }
             }
         }
-
         else
         {
-            if(transform.eulerAngles.y == correctRotation[0] && isPlaced == false)
+            if (Mathf.Abs(transform.eulerAngles.y - correctRotation[0]) < 0.01f && !isPlaced)
             {
                 isPlaced = true;
                 gameManager.correctMove();
             }
-            else if(isPlaced == true)
+            else if (isPlaced)
             {
                 isPlaced = false;
                 gameManager.wrongMove();

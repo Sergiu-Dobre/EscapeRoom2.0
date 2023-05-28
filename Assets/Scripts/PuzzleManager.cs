@@ -29,11 +29,9 @@ public class PuzzleManager : MonoBehaviour
     {
         correctPipes += 1;
 
-        Debug.Log("correct move");
-
         if(correctPipes == totalPipes)
         {
-            Hint.SetActive(true);;
+            Debug.Log("correct");
         }
     }
 
