@@ -12,8 +12,10 @@ public class CameraSwitcher : MonoBehaviour
     private float mouseX, mouseY;
 
 
+
     public GameObject box;
     
+
 
     private void Start()
     {
@@ -38,6 +40,8 @@ public class CameraSwitcher : MonoBehaviour
                 // Lock and hide the cursor
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
+
+                colliders.SetActive(true);
             }
             else if (canSwitchBack)
             {
@@ -50,6 +54,8 @@ public class CameraSwitcher : MonoBehaviour
                 // Unlock and show the cursor
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
+
+                colliders.SetActive(false);
             }
         }
 
@@ -62,8 +68,6 @@ public class CameraSwitcher : MonoBehaviour
             mouseY = Mathf.Clamp(mouseY, -90f, 90f);
 
             alternativeCamera.transform.rotation = Quaternion.Euler(mouseY, mouseX, 0f);
-
-            box.SetActive(false);
         }
     }
 
