@@ -9950,6 +9950,46 @@ PrefabInstance:
       propertyPath: mouseDPI
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 2173674633394624234, guid: a9da0830be620454da207b49773810ad,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2173674633394624235, guid: a9da0830be620454da207b49773810ad,
+        type: 3}
+      propertyPath: m_CameraType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2173674633394624245, guid: a9da0830be620454da207b49773810ad,
+        type: 3}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2173674633394624245, guid: a9da0830be620454da207b49773810ad,
+        type: 3}
+      propertyPath: field of view
+      value: 60.000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 2173674633394624245, guid: a9da0830be620454da207b49773810ad,
+        type: 3}
+      propertyPath: m_FOVAxisMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2173674633394624245, guid: a9da0830be620454da207b49773810ad,
+        type: 3}
+      propertyPath: m_FocalLength
+      value: 20.78461
+      objectReference: {fileID: 0}
+    - target: {fileID: 2173674633394624245, guid: a9da0830be620454da207b49773810ad,
+        type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2173674633394624245, guid: a9da0830be620454da207b49773810ad,
+        type: 3}
+      propertyPath: m_AllowDynamicResolution
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9da0830be620454da207b49773810ad, type: 3}
 --- !u!1001 &3364110976087115148
