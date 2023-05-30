@@ -12,6 +12,9 @@ public class DialPuzzleController : MonoBehaviour
 
     public GameObject GameObject;
 
+    //public GameObject lockcol;
+    public GameObject box;
+
     // Update is called once per frame
     void Update()
     {
@@ -31,6 +34,11 @@ public class DialPuzzleController : MonoBehaviour
         {
             Debug.Log("It's correct!");
             GameObject.GetComponent<Animator>().enabled = true;
+            //lockobj.SetActive(false);
+            
+            box.SetActive(false);
+
+            //lockcol.GetComponent<BoxCollider>().enabled = false;
         }
     }
 }

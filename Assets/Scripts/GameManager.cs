@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public GameObject PipesHolder;
     public GameObject[] Pipes;
     public GameObject Hint;
+    public GameObject puzzle;
 
     [SerializeField]
     int totalPipes = 0;
@@ -33,7 +34,8 @@ public class GameManager : MonoBehaviour
 
         if(correctPipes == totalPipes)
         {
-            Hint.SetActive(true);;
+            Hint.SetActive(true);
+            puzzle.SetActive(false);
         }
     }
 
