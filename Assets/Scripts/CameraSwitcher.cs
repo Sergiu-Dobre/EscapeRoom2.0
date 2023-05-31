@@ -11,11 +11,7 @@ public class CameraSwitcher : MonoBehaviour
     private bool playerInRange = false;
     private float mouseX, mouseY;
 
-
-
-    public GameObject box;
-    
-
+    public GameObject colliders;
 
     private void Start()
     {
@@ -73,7 +69,7 @@ public class CameraSwitcher : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) 
+        if (other.CompareTag("Player")) // Replace "Player" with the appropriate tag of the player object
         {
             playerInRange = true;
         }
@@ -81,7 +77,7 @@ public class CameraSwitcher : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player")) 
+        if (other.CompareTag("Player")) // Replace "Player" with the appropriate tag of the player object
         {
             playerInRange = false;
         }
