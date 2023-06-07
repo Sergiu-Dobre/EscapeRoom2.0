@@ -1858,7 +1858,8 @@ MonoBehaviour:
   - {fileID: 557613094}
   - {fileID: 1754920577}
   correctOrder: 01000000090000000800000007000000
-  GameObject: {fileID: 1067619277}
+  CombinationLock: {fileID: 1067619277}
+  Door: {fileID: 2068349926}
   box: {fileID: 0}
 --- !u!4 &430178778
 Transform:
@@ -4896,7 +4897,7 @@ MonoBehaviour:
   mainCamera: {fileID: 621921834}
   alternativeCamera: {fileID: 709877361}
   sensitivity: 2
-  box: {fileID: 0}
+  colliders: {fileID: 0}
 --- !u!65 &893309083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6517,7 +6518,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 56a13f2e07a04124597ef31ade2183d8,
         type: 3}
       propertyPath: m_Name
-      value: Train3
+      value: Door2
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 56a13f2e07a04124597ef31ade2183d8,
         type: 3}
@@ -8198,7 +8199,7 @@ MonoBehaviour:
   mainCamera: {fileID: 621921834}
   alternativeCamera: {fileID: 985583614}
   sensitivity: 2
-  box: {fileID: 0}
+  colliders: {fileID: 0}
 --- !u!65 &1723844515
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9563,7 +9564,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068349926}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: fbb426410042f9a4db652c3b6c064e8c, type: 2}
   m_CullingMode: 0
