@@ -55,7 +55,7 @@ public class CameraSwitcher : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
 
-                colliders.SetActive(false);
+                Colliders.SetActive(false);
             }
         }
 
