@@ -13,7 +13,7 @@ public class CameraSwitcher : MonoBehaviour
 
 
 
-    public GameObject colliders;
+    public GameObject box;
     
 
 
@@ -41,7 +41,7 @@ public class CameraSwitcher : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
 
-                colliders.SetActive(true);
+             //   colliders.SetActive(true);
             }
             else if (canSwitchBack)
             {
@@ -55,7 +55,7 @@ public class CameraSwitcher : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
 
-                Colliders.SetActive(false);
+               // colliders.SetActive(false);
             }
         }
 
