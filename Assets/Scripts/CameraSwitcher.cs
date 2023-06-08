@@ -37,7 +37,7 @@ public class CameraSwitcher : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
 
-                colliders.SetActive(true);
+             //   colliders.SetActive(true);
             }
             else if (canSwitchBack)
             {
@@ -51,7 +51,7 @@ public class CameraSwitcher : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
 
-                colliders.SetActive(false);
+               // colliders.SetActive(false);
             }
         }
 

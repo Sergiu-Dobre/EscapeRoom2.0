@@ -12,7 +12,8 @@ public class DialPuzzleController : MonoBehaviour
     // Array of the correct order of the dials
     public int[] correctOrder;
 
-    public GameObject GameObject;
+    public GameObject CombinationLock;
+    public GameObject Door;
 
     //public GameObject otherGameObject;
 
@@ -52,9 +53,10 @@ public class DialPuzzleController : MonoBehaviour
         if (isCorrectOrder)
         {
             Debug.Log("It's correct!");
-            GameObject.GetComponent<Animator>().enabled = true;
+            CombinationLock.GetComponent<Animator>().enabled = true;
+            Door.GetComponent<Animator>().enabled = true;
             //lockobj.SetActive(false);
-            
+
             box.SetActive(false);
             enablepick.SetActive(true);
 
