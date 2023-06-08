@@ -11,7 +11,11 @@ public class CameraSwitcher : MonoBehaviour
     private bool playerInRange = false;
     private float mouseX, mouseY;
 
-    public GameObject colliders;
+
+
+    public GameObject box;
+    
+
 
     private void Start()
     {
@@ -37,7 +41,7 @@ public class CameraSwitcher : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
 
-                colliders.SetActive(true);
+             //   colliders.SetActive(true);
             }
             else if (canSwitchBack)
             {
@@ -51,7 +55,7 @@ public class CameraSwitcher : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
 
-                colliders.SetActive(false);
+               // colliders.SetActive(false);
             }
         }
 
@@ -69,7 +73,7 @@ public class CameraSwitcher : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) // Replace "Player" with the appropriate tag of the player object
+        if (other.CompareTag("Player")) 
         {
             playerInRange = true;
         }
@@ -77,7 +81,7 @@ public class CameraSwitcher : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player")) // Replace "Player" with the appropriate tag of the player object
+        if (other.CompareTag("Player")) 
         {
             playerInRange = false;
         }

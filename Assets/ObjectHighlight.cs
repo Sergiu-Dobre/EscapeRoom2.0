@@ -39,6 +39,7 @@ public class ObjectHighlight : MonoBehaviour
         if (playerCamera == null)
         {
 
+           
             playerCamera = FindCamera();
 
         }
