@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 314656241769112439, guid: d3bf2fcc5ec8d294ca61c1af7355b8a3,
         type: 3}
       propertyPath: m_Name
-      value: CombinationLockBody
+      value: CombinationLockBody Variant
       objectReference: {fileID: 0}
     - target: {fileID: 1066753645063129053, guid: d3bf2fcc5ec8d294ca61c1af7355b8a3,
         type: 3}
@@ -40,37 +40,37 @@ PrefabInstance:
     - target: {fileID: 1087111901897406925, guid: d3bf2fcc5ec8d294ca61c1af7355b8a3,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5524972
+      value: 0.70199466
       objectReference: {fileID: 0}
     - target: {fileID: 1087111901897406925, guid: d3bf2fcc5ec8d294ca61c1af7355b8a3,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.43365124
+      value: 0.022587316
       objectReference: {fileID: 0}
     - target: {fileID: 1087111901897406925, guid: d3bf2fcc5ec8d294ca61c1af7355b8a3,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.5793889
+      value: -0.7117598
       objectReference: {fileID: 0}
     - target: {fileID: 1087111901897406925, guid: d3bf2fcc5ec8d294ca61c1af7355b8a3,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.4135238
+      value: 0.009551615
       objectReference: {fileID: 0}
     - target: {fileID: 1087111901897406925, guid: d3bf2fcc5ec8d294ca61c1af7355b8a3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 2.597
       objectReference: {fileID: 0}
     - target: {fileID: 1087111901897406925, guid: d3bf2fcc5ec8d294ca61c1af7355b8a3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -92.722
+      value: -90.816
       objectReference: {fileID: 0}
     - target: {fileID: 1087111901897406925, guid: d3bf2fcc5ec8d294ca61c1af7355b8a3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -73.627
+      value: -1.075
       objectReference: {fileID: 0}
     - target: {fileID: 2259995981419617205, guid: d3bf2fcc5ec8d294ca61c1af7355b8a3,
         type: 3}
@@ -96,6 +96,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f7445f378d66fdc4ca25ee8306d2310d, type: 2}
+      objectReference: {fileID: 2100000, guid: 7b951742ee1b6f943bc1950aa412a91a, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3bf2fcc5ec8d294ca61c1af7355b8a3, type: 3}
