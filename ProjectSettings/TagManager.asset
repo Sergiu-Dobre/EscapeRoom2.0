@@ -8,6 +8,7 @@ TagManager:
   - pipe
   - DoorTrigger
   - Wheel
+  - highlight
   layers:
   - Default
   - TransparentFX

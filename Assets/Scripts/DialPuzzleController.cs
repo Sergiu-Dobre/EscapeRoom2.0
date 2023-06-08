@@ -12,7 +12,8 @@ public class DialPuzzleController : MonoBehaviour
     // Array of the correct order of the dials
     public int[] correctOrder;
 
-    public GameObject GameObject;
+    public GameObject CombinationLock;
+    public GameObject Door;
 
     //public GameObject otherGameObject;
 
@@ -20,22 +21,15 @@ public class DialPuzzleController : MonoBehaviour
     public GameObject box;
     public GameObject enablepick;
     public GameObject lockobj;
+    //public GameObject camon;
 
     public Camera alternativeCamera;
     public Camera mainCamera;
-
-    private float timer;
-
-    private void Start()
-    {
-        timer = 0f;
-    }
 
     // Update is called once per frame
     void Update()
     {
         
-        //StartCoroutine(waitt());
 
         // Check if the dials are in the correct order
         bool isCorrectOrder = true;
@@ -52,9 +46,10 @@ public class DialPuzzleController : MonoBehaviour
         if (isCorrectOrder)
         {
             Debug.Log("It's correct!");
-            GameObject.GetComponent<Animator>().enabled = true;
+            CombinationLock.GetComponent<Animator>().enabled = true;
+            Door.GetComponent<Animator>().enabled = true;
             //lockobj.SetActive(false);
-            
+
             box.SetActive(false);
             enablepick.SetActive(true);
 
@@ -63,16 +58,9 @@ public class DialPuzzleController : MonoBehaviour
             lockobj.SetActive(false);
             lockcol.SetActive(false);
 
-            timer += Time.deltaTime;
+            alternativeCamera.enabled = false;
+            mainCamera.enabled = true;
 
-            if (timer >= 2f)
-            {
-                alternativeCamera.enabled = false;
-                mainCamera.enabled = true;
-            }
-
-           // IEnumerator waitt()
-           
             //otherGameObject.GetComponent<BoxCollider>();
             //Destroy(locktrigger.GetComponent<BoxCollider>());
         }
