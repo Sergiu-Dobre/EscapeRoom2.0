@@ -13,6 +13,7 @@ public class MouseController : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         //we are hiding and locking the cursor while we are in game 
     }
 
