@@ -33,7 +33,7 @@ public class WheelPlacement : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         if (other.tag=="Wheel")
-        {   
+        {   this.transform.position = other.transform.position;
             Debug.Log("yes is colliding");
             collideCheck= true;
             Destroy(wheelPickUp);    
