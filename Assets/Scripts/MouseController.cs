@@ -8,15 +8,12 @@ public class MouseController : MonoBehaviour
     public Transform pBody;
     float rotationX = 100f;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        //we are hiding and locking the cursor while we are in game 
+        //we are hiding and cursor (there is a knob on the UI)
     }
 
-    // Update is called once per frame
     void Update()
     {
         float mouseX = Input.GetAxis("Mouse X");
