@@ -8,7 +8,6 @@ public class OpenDoor : MonoBehaviour
     private bool openDoor;
     //temporary fix
     [SerializeField] GameObject door;
-    public GameObject Door;
 
 
     // Start is called before the first frame update
@@ -39,7 +38,6 @@ public class OpenDoor : MonoBehaviour
                 //TODO: play animation
                 
                 door.SetActive(false);
-                Door.GetComponent<Animator>().enabled = true;
 
 
             }
