@@ -2844,6 +2844,7 @@ GameObject:
   - component: {fileID: 365739767}
   - component: {fileID: 365739768}
   - component: {fileID: 365739769}
+  - component: {fileID: 365739770}
   m_Layer: 0
   m_Name: wheel4
   m_TagString: Untagged
@@ -2978,6 +2979,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allowInteraction: 0
+--- !u!95 &365739770
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365739761}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f8e8921147d3319498ff582820db47fb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &365921786
 GameObject:
   m_ObjectHideFlags: 0
@@ -8629,6 +8651,7 @@ GameObject:
   - component: {fileID: 831278038}
   - component: {fileID: 831278042}
   - component: {fileID: 831278041}
+  - component: {fileID: 831278044}
   - component: {fileID: 831278039}
   - component: {fileID: 831278043}
   m_Layer: 0
@@ -8738,6 +8761,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.4680114, y: 1.3757341, z: 1.0267819}
   m_Center: {x: -0.62324077, y: 0.17447603, z: 0}
+--- !u!95 &831278044
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 831278037}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f8e8921147d3319498ff582820db47fb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &841292937
 GameObject:
   m_ObjectHideFlags: 0
@@ -11120,7 +11164,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 443136812}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1032193394
+--- !u!114 &1032193398
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11132,7 +11176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0180bcf430d986445af667090e13809d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &1032193395
+--- !u!95 &1032193399
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -13509,6 +13553,7 @@ GameObject:
   - component: {fileID: 1328293582}
   - component: {fileID: 1328293584}
   - component: {fileID: 1328293585}
+  - component: {fileID: 1328293586}
   m_Layer: 0
   m_Name: wheel3
   m_TagString: Untagged
@@ -13616,6 +13661,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.118704, y: 1.1605572, z: 1.1605572}
   m_Center: {x: -0.8445327, y: 0, z: 0}
+--- !u!95 &1328293586
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328293579}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f8e8921147d3319498ff582820db47fb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1333135475
 GameObject:
   m_ObjectHideFlags: 0
@@ -18404,6 +18470,7 @@ GameObject:
   - component: {fileID: 1816149430}
   - component: {fileID: 1816149432}
   - component: {fileID: 1816149433}
+  - component: {fileID: 1816149434}
   m_Layer: 0
   m_Name: wheel2
   m_TagString: Untagged
@@ -18511,6 +18578,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.2256927, y: 1.159858, z: 1.159858}
   m_Center: {x: -0.22181511, y: 0, z: 0}
+--- !u!95 &1816149434
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816149427}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f8e8921147d3319498ff582820db47fb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1837944085
 GameObject:
   m_ObjectHideFlags: 0
