@@ -35,7 +35,8 @@ public class GameManager : MonoBehaviour
 
         if(correctPipes == totalPipes)
         {
-            door.SetActive(false);
+            //door.SetActive(false);
+            door.GetComponent<Animator>().enabled = true;
             puzzle.SetActive(false);
             fin.SetActive(true);
         }
