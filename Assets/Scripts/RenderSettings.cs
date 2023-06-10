@@ -9,15 +9,6 @@ public class RenderSettings : MonoBehaviour
 {
     [SerializeField] private bool allowInteraction=false;
 
-
-
-    private void Start()
-    {
-       
-       
-       
-       
-    }
     void Update()
     {
         if (Input.GetKey(KeyCode.E))
@@ -39,6 +30,7 @@ public class RenderSettings : MonoBehaviour
             {
                RenderSettings.Destroy(this);
                // RenderSettings.fog = false;
+               //was about to change the fog but this gives me an error and could not troubleshoot it
                 Debug.Log("Light settings change");
 
              
