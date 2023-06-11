@@ -8,6 +8,7 @@ TagManager:
   - pipe
   - DoorTrigger
   - Wheel
+  - CinemachineTarget
   layers:
   - Default
   - TransparentFX
