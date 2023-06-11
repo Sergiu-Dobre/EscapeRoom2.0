@@ -8,7 +8,6 @@ public class morseCodeAnim1 : MonoBehaviour
 
     public GameObject dot;
     public GameObject dash;
-    public GameObject slash;
 
     int PlayerLives = 1;
 
@@ -48,15 +47,7 @@ public class morseCodeAnim1 : MonoBehaviour
         yield return new WaitForSeconds(1);
         dash.SetActive(false);
 
-        slash.SetActive(true);
-        anim = gameObject.GetComponent<Animation>();
-        yield return new WaitForSeconds(1);
-        slash.SetActive(false);
-        
-        slash.SetActive(true);
-        anim = gameObject.GetComponent<Animation>();
-        yield return new WaitForSeconds(1);
-        slash.SetActive(false);
+        yield return new WaitForSeconds(2);
         }
     }
 }

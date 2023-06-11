@@ -11,14 +11,9 @@ public class PickUpContoller : MonoBehaviour
     [SerializeField] private float PickupRange;
     private Rigidbody CurrentObject;
 
-
-    void Start()
-    {
-
-    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0))//changed the button after feedback from Aboudi 
         {
             if (CurrentObject)
             {

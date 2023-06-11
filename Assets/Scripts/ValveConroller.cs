@@ -15,16 +15,14 @@ public class ValveConroller : MonoBehaviour
     [SerializeField] private Vector3 rescale;
     [SerializeField] private AudioSource audioSource;
 
-
-
     // Start is called before the first frame update
- 
     void Awake()
     {   
         //rescaleRandom= new Vector3 (1f, Random.Range(1f,0.2f), 1f);
         //rescaleRandom2 = new Vector3(1f, Random.Range(1f, 0.2f), 1f);
         //rescaleRandom3 = new Vector3(1f, Random.Range(1f, 0.2f), 1f);
-       
+       //first iteration had this for a random range between but I decided to do it manually change the scale of the object in inspector
+      // as this will give the player a positive loop if they see that the 2 out of the 4 pressure pieps are full (for i.e.)
         allowInteraction = false;
         rescale = new Vector3(1f, 0.65f, 1f);
     }
@@ -47,8 +45,7 @@ public class ValveConroller : MonoBehaviour
         if (allowInteraction)
         {
             if (other.tag == "Player")
-            {
-
+            {   
                 audioSource.Play();
                 // transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
                 Debug.Log("colides wiht the valve");

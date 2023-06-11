@@ -6,17 +6,15 @@ public class MouseController : MonoBehaviour
 {
     public float mouseDPI = 100f;
     public Transform pBody;
-    float rotationX = 100f;
+    float rotationX = 0f;
+    float rotationY = -100f;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        //we are hiding and locking the cursor while we are in game 
+        //we are hiding and cursor (there is a knob on the UI)
     }
 
-    // Update is called once per frame
     void Update()
     {
         float mouseX = Input.GetAxis("Mouse X");
@@ -26,6 +24,8 @@ public class MouseController : MonoBehaviour
         rotationX -= mouseY;
         transform.localRotation = Quaternion.Euler(rotationX, 0f, 0f);
         rotationX = Mathf.Clamp(rotationX, -90, 90);
+        rotationY = Mathf.Clamp(90, rotationY, 90);
+
         //clamping the rotation
 
         pBody.Rotate(Vector3.up * mouseX * Time.deltaTime * mouseDPI);

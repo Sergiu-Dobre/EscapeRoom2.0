@@ -8,24 +8,17 @@ public class WheelPlacement : MonoBehaviour
    // [SerializeField] private GameObject targetPlacement;
     [SerializeField] private GameObject missingWheel;
     // Start is called before the first frame update   
-   
     [SerializeField] private bool collideCheck;
 
     void Start()
-    {
-
-
-        
-        
+    { 
         //missingWheel.SetActive(false);
     }
 
 
-
     // Update is called once per frame
     void Update()
-    {
-       
+    { 
             if (collideCheck)
             {
            
@@ -34,17 +27,13 @@ public class WheelPlacement : MonoBehaviour
             Rigidbody rigidbody = GetComponent<Rigidbody>();
            
             rigidbody.constraints = RigidbodyConstraints.FreezePosition;
-
-
-        }
+  }
 
     }
-
     private void OnTriggerStay(Collider other)
     {
         if (other.tag=="Wheel")
-
-        {   
+        {   this.transform.position = other.transform.position;
             Debug.Log("yes is colliding");
             collideCheck= true;
             Destroy(wheelPickUp);    
