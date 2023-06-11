@@ -13,7 +13,7 @@ public class PickUpContoller : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))//changed the button after feedback from Aboudi
+        if (Input.GetKeyDown(KeyCode.Mouse0))//changed the button after feedback from Aboudi 
         {
             if (CurrentObject)
             {
