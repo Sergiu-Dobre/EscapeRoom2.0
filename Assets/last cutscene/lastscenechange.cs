@@ -27,7 +27,7 @@ public class lastscenechange : MonoBehaviour
             ChangeScene();
         }
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             SceneManager.LoadScene(menu);
             Cursor.lockState = CursorLockMode.None;
