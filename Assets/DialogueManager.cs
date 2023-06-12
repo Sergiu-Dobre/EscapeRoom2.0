@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour
     public Collider dialogueCollider;
     public GameObject dialogueUI;
     public TMP_Text npcDialogueBox;
+    public float maxDistance = 3f; // Maximum distance for the player to interact with the NPC
 
     private bool isTalking;
     private int curDialogueIndex;
@@ -22,16 +23,18 @@ public class DialogueManager : MonoBehaviour
     {
         if (!isTalking && Input.GetKeyDown(KeyCode.E))
         {
-            if (dialogueCollider.bounds.Contains(transform.position))
+            if (dialogueCollider.bounds.Contains(transform.position) && Vector3.Distance(transform.position, dialogueCollider.transform.position) <= maxDistance)
             {
                 StartConversation();
             }
             else
             {
-                Debug.Log("Player is not colliding with the dialogue collider.");
+                Debug.Log("Player is not in range of the dialogue collider.");
             }
         }
-        else if (isTalking && Input.GetMouseButtonDown(0)) // Left mouse button
+
+        // Check if the UI is active before processing next dialogue
+        if (isTalking && dialogueUI.activeSelf && Input.GetMouseButtonDown(0)) // Left mouse button
         {
             ProcessNextDialogue();
         }
