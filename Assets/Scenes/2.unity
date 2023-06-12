@@ -5255,8 +5255,6 @@ MonoBehaviour:
   lockobj: {fileID: 1723844513}
   alternativeCamera: {fileID: 985583614}
   mainCamera: {fileID: 621921834}
-  button: {fileID: 0}
-  safedoor: {fileID: 0}
 --- !u!4 &430178778
 Transform:
   m_ObjectHideFlags: 0
@@ -8999,7 +8997,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 94587557}
-  - {fileID: 1774433811}
   - {fileID: 1443459774}
   - {fileID: 1905542428}
   - {fileID: 976839985}
@@ -13887,7 +13884,7 @@ Transform:
   - {fileID: 848261825}
   - {fileID: 1342568816}
   m_Father: {fileID: 668809581}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &980467403
 GameObject:
@@ -16562,7 +16559,7 @@ Transform:
   - {fileID: 286855799}
   - {fileID: 2082238327}
   m_Father: {fileID: 0}
-  m_RootOrder: 50
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: -41.701, z: 0}
 --- !u!1 &1189953585
 GameObject:
@@ -20312,7 +20309,7 @@ Transform:
   - {fileID: 1796657102}
   - {fileID: 1991279444}
   m_Father: {fileID: 668809581}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1453628138
 GameObject:
@@ -24642,8 +24639,8 @@ Transform:
   - {fileID: 1932583340}
   - {fileID: 1344232901}
   - {fileID: 1508599344}
-  m_Father: {fileID: 668809581}
-  m_RootOrder: 1
+  m_Father: {fileID: 0}
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1791173017
 GameObject:
@@ -26212,7 +26209,7 @@ Transform:
   - {fileID: 1433091431}
   - {fileID: 639539142}
   m_Father: {fileID: 668809581}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1910229073
 GameObject:
@@ -26695,7 +26692,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1932583339}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef71c0337964cb04eb9f300b4dc2b33d, type: 3}
+  m_Script: {fileID: 11500000, guid: 59dd0920318b5ef4bad90285700d0fac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dials:
@@ -26705,10 +26702,7 @@ MonoBehaviour:
   - {fileID: 1344232902}
   correctOrder: 04000000030000000900000006000000
   CombinationLock: {fileID: 1344232906}
-  Door: {fileID: 1903297163}
   lockcol: {fileID: 1443459773}
-  box: {fileID: 1188256222528442755}
-  enablepick: {fileID: 1943679642}
   lockobj: {fileID: 399963538}
   alternativeCamera: {fileID: 1508599347}
   mainCamera: {fileID: 621921834}
@@ -30075,7 +30069,7 @@ PrefabInstance:
     - target: {fileID: 2173674632478634480, guid: a9da0830be620454da207b49773810ad,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.61
+      value: 54.99
       objectReference: {fileID: 0}
     - target: {fileID: 2173674632478634480, guid: a9da0830be620454da207b49773810ad,
         type: 3}

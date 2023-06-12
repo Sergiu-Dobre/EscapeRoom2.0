@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class DialPuzzleController : MonoBehaviour
+public class DialPuzzleController1 : MonoBehaviour
 {
 
     // Array of the four dials in the puzzle
@@ -13,21 +13,17 @@ public class DialPuzzleController : MonoBehaviour
     public int[] correctOrder;
 
     public GameObject CombinationLock;
-    public GameObject Door;
 
     //public GameObject otherGameObject;
 
     public GameObject lockcol;
-    public GameObject box;
-    public GameObject enablepick;
     public GameObject lockobj;
-    //public GameObject camon;
 
     public Camera alternativeCamera;
     public Camera mainCamera;
 
-    //public GameObject button;
-    //public GameObject safedoor;
+    public GameObject button;
+    public GameObject safedoor;
 
     float timer;
 
@@ -51,27 +47,18 @@ public class DialPuzzleController : MonoBehaviour
         {
             Debug.Log("It's correct!");
             CombinationLock.GetComponent<Animator>().enabled = true;
-            Door.GetComponent<Animator>().enabled = true;
-            //lockobj.SetActive(false);
 
-            box.SetActive(false);
-            enablepick.SetActive(true);
-
-            //switch to main camera
-            //camon.SetActive(true);
             lockobj.SetActive(false);
             lockcol.SetActive(false);
 
+            button.SetActive(true);
+            safedoor.GetComponent<Animator>().enabled = true;
 
             timer += Time.deltaTime;
             if (timer >= 2)
             {
                 MyFunction();
             }
-
-            
-            //otherGameObject.GetComponent<BoxCollider>();
-            //Destroy(locktrigger.GetComponent<BoxCollider>());
         }
     }
 
