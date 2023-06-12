@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class sceneone : MonoBehaviour
 {
-    public string p2cutscenetest; // Name of the scene you want to switch to
+    public string p2cutscenetest;
+    public string playlvl; // Name of the scene you want to switch to
     public float delayTime = 900f; // Delay time in seconds
 
     private float timer;
@@ -25,6 +26,11 @@ public class sceneone : MonoBehaviour
         {
             ChangeScene();
             Debug.Log("yez");
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            SceneManager.LoadScene(playlvl);
         }
     }
 

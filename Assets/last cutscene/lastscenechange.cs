@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class lastscenechange : MonoBehaviour
 {
-    public string lastscene; // Name of the scene you want to switch to
+    public string lastscene;
+    public string menu; // Name of the scene you want to switch to
     public float delayTime = 350f; // Delay time in seconds
 
     private float timer;
@@ -24,6 +25,13 @@ public class lastscenechange : MonoBehaviour
         if (timer >= delayTime)
         {
             ChangeScene();
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            SceneManager.LoadScene(menu);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
     }
 

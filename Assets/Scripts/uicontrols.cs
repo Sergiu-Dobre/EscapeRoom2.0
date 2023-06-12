@@ -6,6 +6,13 @@ public class uicontrols : MonoBehaviour
 {
     public GameObject lmb;
 
+    
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     private void OnTriggerEnter()
     {
         lmb.SetActive(true);

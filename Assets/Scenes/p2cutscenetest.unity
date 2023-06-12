@@ -11467,6 +11467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainlvl: 2
+  playlvl: 2
   delayTime: 15
 --- !u!4 &2068648408
 Transform:
