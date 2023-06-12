@@ -7,7 +7,7 @@ public class placelever : MonoBehaviour
     public GameObject leverp;
     public GameObject placedlever;
     public GameObject checklever;
-    //public GameObject doorop;
+    public GameObject door;
 
     private bool playerInRange = false;
 
@@ -21,8 +21,8 @@ public class placelever : MonoBehaviour
                 if (playerInRange && Input.GetKeyDown(KeyCode.E))
                 {
                     placedlever.SetActive(true);
-                    //doorop.SetActive(false);
                     StartCoroutine(waiti());
+                    door.GetComponent<Animator>().enabled = true;
                 }
             }
         }
