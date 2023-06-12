@@ -15377,7 +15377,7 @@ MonoBehaviour:
   mainCamera: {fileID: 621921834}
   alternativeCamera: {fileID: 1928054305}
   sensitivity: 2
-  colliderslocked: {fileID: 0}
+  colliderslocked: {fileID: 1988993837}
   box: {fileID: 0}
 --- !u!65 &1064822301
 BoxCollider:
@@ -23925,7 +23925,7 @@ MonoBehaviour:
   mainCamera: {fileID: 621921834}
   alternativeCamera: {fileID: 2114952991}
   sensitivity: 2
-  colliderslocked: {fileID: 0}
+  colliderslocked: {fileID: 861858250}
   box: {fileID: 0}
 --- !u!65 &1668154192
 BoxCollider:
