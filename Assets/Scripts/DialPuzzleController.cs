@@ -26,6 +26,9 @@ public class DialPuzzleController : MonoBehaviour
     public Camera alternativeCamera;
     public Camera mainCamera;
 
+    public GameObject button;
+    public GameObject safedoor;
+
     float timer;
 
     // Update is called once per frame
@@ -58,6 +61,9 @@ public class DialPuzzleController : MonoBehaviour
             //camon.SetActive(true);
             lockobj.SetActive(false);
             lockcol.SetActive(false);
+
+            button.SetActive(true);
+            safedoor.GetComponent<Animator>().enabled = true;
 
             timer += Time.deltaTime;
             if (timer >= 2)
