@@ -12,13 +12,13 @@ public class MenuSystem : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("p1cutscenetest");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void OpenSettings()
     {
         // code to open the settings menu goes here
-        SceneManager.LoadScene("Settings");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     public void QuitGame()
