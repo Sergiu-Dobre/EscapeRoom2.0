@@ -4543,6 +4543,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2661215666156734702, guid: c5d9964c5203f0b439a975a0c3676ea8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9be739ffad11db94187a8f6599069f00, type: 2}
+    - target: {fileID: 6264475996432291556, guid: c5d9964c5203f0b439a975a0c3676ea8,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b8405887ee0e8d7469d747e40cecee19, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5d9964c5203f0b439a975a0c3676ea8, type: 3}
 --- !u!4 &885102924 stripped
@@ -10747,6 +10757,7 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   alternativeCamera: {fileID: 1723913229}
   sensitivity: 2
+  colliderslocked: {fileID: 0}
   box: {fileID: 0}
 --- !u!65 &1953091342
 BoxCollider:
