@@ -21,7 +21,7 @@ public class WheelController : MonoBehaviour
 
     bool IsPlayerCloseToObject()
     {
-        float distanceThreshold = 2f; // Define the distance threshold for proximity
+        float distanceThreshold = 1f; // Define the distance threshold for proximity
         GameObject player = GameObject.FindGameObjectWithTag("Player"); // Assuming the player is tagged as "Player"
         float distance = Vector3.Distance(player.transform.position, transform.position); // Calculate the distance between player and object
 
