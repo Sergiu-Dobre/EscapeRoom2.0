@@ -11,12 +11,9 @@ public class CameraSwitcher : MonoBehaviour
     private bool playerInRange = false;
     private float mouseX, mouseY;
 
-
-
+    public GameObject colliderslocked;
     public GameObject box;
     
-
-
     private void Start()
     {
         // Activate the main camera initially
@@ -41,7 +38,7 @@ public class CameraSwitcher : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
 
-             //   colliders.SetActive(true);
+                colliderslocked.SetActive(true);
             }
             else if (canSwitchBack)
             {
@@ -55,7 +52,7 @@ public class CameraSwitcher : MonoBehaviour
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
 
-               // colliders.SetActive(false);
+                colliderslocked.SetActive(false);
             }
         }
 

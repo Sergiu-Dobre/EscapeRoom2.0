@@ -26,11 +26,12 @@ public class DialPuzzleController : MonoBehaviour
     public Camera alternativeCamera;
     public Camera mainCamera;
 
+    float timer;
+
     // Update is called once per frame
     void Update()
     {
-        
-
+      
         // Check if the dials are in the correct order
         bool isCorrectOrder = true;
         for (int i = 0; i < dials.Length; i++)
@@ -58,12 +59,23 @@ public class DialPuzzleController : MonoBehaviour
             lockobj.SetActive(false);
             lockcol.SetActive(false);
 
-            alternativeCamera.enabled = false;
-            mainCamera.enabled = true;
+            timer += Time.deltaTime;
+            if (timer >= 2)
+            {
+                MyFunction();
+            }
 
+            
             //otherGameObject.GetComponent<BoxCollider>();
             //Destroy(locktrigger.GetComponent<BoxCollider>());
         }
     }
+
+    void MyFunction()
+            {
+                alternativeCamera.enabled = false;
+                mainCamera.enabled = true;
+                Debug.Log("it woorks");
+            }
 }
 
