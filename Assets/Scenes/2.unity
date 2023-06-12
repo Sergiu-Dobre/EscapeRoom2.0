@@ -9571,6 +9571,42 @@ Transform:
   m_Father: {fileID: 781022145}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &711301915 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cdd58d84acfb3504abf5b2dea3f3d2c0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1261944221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &711301919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711301915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 328dc8b9ca95e4f48913e3421820c26c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npc: {fileID: 11400000, guid: 013c780fdcad3364bbce339731e678ff, type: 2}
+  dialogueCollider: {fileID: 711301920}
+  dialogueUI: {fileID: 1546879834}
+  npcDialogueBox: {fileID: 231998097}
+  maxDistance: 3
+--- !u!65 &711301920
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711301915}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.649259, y: 2.357059, z: 1.0831503}
+  m_Center: {x: 0.00032961377, y: 0.82748747, z: 0.0039213905}
 --- !u!1 &713050237
 GameObject:
   m_ObjectHideFlags: 0
@@ -15978,35 +16014,6 @@ MonoBehaviour:
   playerTransform: {fileID: 374458554}
   followDistance: 2
   speed: 3
---- !u!114 &1131067002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113130773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 328dc8b9ca95e4f48913e3421820c26c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  npc: {fileID: 11400000, guid: 013c780fdcad3364bbce339731e678ff, type: 2}
-  dialogueCollider: {fileID: 1131067005}
-  dialogueUI: {fileID: 1546879834}
-  npcDialogueBox: {fileID: 231998097}
---- !u!65 &1131067005
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113130773}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.649259, y: 2.357059, z: 1.0831503}
-  m_Center: {x: 0.00032961377, y: 0.82748747, z: 0.0039213905}
 --- !u!1 &1133982018
 GameObject:
   m_ObjectHideFlags: 0
