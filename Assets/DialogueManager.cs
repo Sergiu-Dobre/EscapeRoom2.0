@@ -1,206 +1,69 @@
-using UnityEngine;
 
+using UnityEngine;
 using TMPro;
 
-
-
 public class DialogueManager : MonoBehaviour
-
 {
-
     public NPC npc;
-
-    public GameObject player;
-
+    public Collider dialogueCollider;
     public GameObject dialogueUI;
-
     public TMP_Text npcDialogueBox;
 
-    public TMP_Text playerResponse;
-
-
-
     private bool isTalking;
-
-    private float distance;
-
-    private int curResponseTracker;
-
-
+    private int curDialogueIndex;
 
     private void Start()
-
     {
-
         dialogueUI.SetActive(false);
-
         Cursor.visible = true;
-
     }
 
-
-
-    private void OnMouseOver()
-
+    private void Update()
     {
-
-        distance = Vector3.Distance(player.transform.position, transform.position);
-
-
-
-        if (distance <= 2.5f)
-
+        if (!isTalking && Input.GetKeyDown(KeyCode.E))
         {
-
-            // Scroll between answers using mouse wheel 
-
-            float scroll = Input.GetAxis("Mouse ScrollWheel");
-
-            if (scroll > 0f)
-
+            if (dialogueCollider.bounds.Contains(transform.position))
             {
-
-                curResponseTracker--;
-
-                if (curResponseTracker < 0)
-
-                {
-
-                    curResponseTracker = 0;
-
-                }
-
-            }
-
-            else if (scroll < 0f)
-
-            {
-
-                curResponseTracker++;
-
-                if (curResponseTracker >= npc.playerDialogue.Length)
-
-                {
-
-                    curResponseTracker = npc.playerDialogue.Length - 1;
-
-                }
-
-            }
-
-
-
-            // Dialogue pops up 
-
-            if (Input.GetKeyDown(KeyCode.E) && !isTalking)
-
-            {
-
                 StartConversation();
-
             }
-
-            else if (Input.GetKeyDown(KeyCode.E) && isTalking)
-
+            else
             {
-
-                EndConversation();
-
+                Debug.Log("Player is not colliding with the dialogue collider.");
             }
-
-
-
-            if (curResponseTracker < npc.playerDialogue.Length)
-
-            {
-
-                playerResponse.text = npc.playerDialogue[curResponseTracker];
-
-                if (Input.GetKeyDown(KeyCode.Return))
-
-                {
-
-                    ProcessPlayerResponse();
-
-                }
-
-                else if (Input.GetMouseButtonDown(2)) // Middle mouse button 
-
-                {
-
-                    ProcessPlayerResponse();
-
-                }
-
-            }
-
         }
-
+        else if (isTalking && Input.GetMouseButtonDown(0)) // Left mouse button
+        {
+            ProcessNextDialogue();
+        }
     }
-
-
 
     void StartConversation()
-
     {
-
         isTalking = true;
-
-        curResponseTracker = 0;
-
+        curDialogueIndex = 0;
         dialogueUI.SetActive(true);
-
-        npcDialogueBox.text = npc.dialogue[0];
-
+        npcDialogueBox.text = npc.dialogue[curDialogueIndex];
+        Debug.Log("Conversation started.");
     }
 
+    void ProcessNextDialogue()
+    {
+        curDialogueIndex++;
 
+        if (curDialogueIndex < npc.dialogue.Length)
+        {
+            npcDialogueBox.text = npc.dialogue[curDialogueIndex];
+        }
+        else
+        {
+            EndConversation();
+        }
+    }
 
     void EndConversation()
-
     {
-
         isTalking = false;
-
         dialogueUI.SetActive(false);
-
+        Debug.Log("Conversation ended.");
     }
-
-
-
-
-
-    void ProcessPlayerResponse()
-
-    {
-
-        if (curResponseTracker < npc.dialogue.Length - 1)
-
-        {
-
-            npcDialogueBox.text = npc.dialogue[curResponseTracker + 1];
-
-        }
-
-        else
-
-        {
-
-            EndConversation();
-
-        }
-
-
-
-        curResponseTracker++; // Move to the next NPC response 
-
-        playerResponse.text = ""; // Clear the player response text 
-
-    }
-
-
-
-
-
 }
-

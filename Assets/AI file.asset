@@ -14,13 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Ai
   dialogue:
-  - 'Do you wanna hear more?
+  - 'Hello! I am an AI scientist. '
+  - 'You seem confused. '
+  - 'Let us calibrate your awareness.
 
 '
-  - "Very well human! \n"
-  - 'Do you wanna hear more?
-
-'
-  playerDialogue:
-  - yes
-  - no
+  - "Time, 14:00. Year, 2068. Your life force, alive. \n"
+  - Calibration done!
+  - 'There has been  a strong magnetic storm recently, which caused you to go forward
+    in time. '
+  - 'As you probably noticed, future world is not as good as your own time. '
+  - 'Humans used all of the earth''s natural resources and did not care about the
+    nature.  '
+  - Therefore now we can only use ecologically clean energy.
+  - If you wish to return to your own time, you need to fix this train.
+  - 'It has been broken for a while but I will help you with that. '
+  - Shall we begin?
+  playerDialogue: []
