@@ -6,7 +6,8 @@ public class placelever : MonoBehaviour
 {
     public GameObject leverp;
     public GameObject placedlever;
-    public GameObject doorop;
+    public GameObject checklever;
+    //public GameObject doorop;
 
     private bool playerInRange = false;
 
@@ -15,11 +16,14 @@ public class placelever : MonoBehaviour
     {
         if (leverp.activeSelf)
         {
-            if (playerInRange && Input.GetKeyDown(KeyCode.E))
+            if (!checklever.activeSelf)
             {
-                placedlever.SetActive(true);
-                //doorop.SetActive(false);
-                StartCoroutine(waiti());
+                if (playerInRange && Input.GetKeyDown(KeyCode.E))
+                {
+                    placedlever.SetActive(true);
+                    //doorop.SetActive(false);
+                    StartCoroutine(waiti());
+                }
             }
         }
     }
@@ -43,7 +47,7 @@ public class placelever : MonoBehaviour
     IEnumerator waiti()
     {
         yield return new WaitForSeconds(2);
-        doorop.SetActive(false);
+        //doorop.SetActive(false);
         Debug.Log("waits");
     }
 }
